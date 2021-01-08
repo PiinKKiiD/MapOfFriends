@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_margin="@dimen/margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_alignParentLeft="true"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profilePhoto"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_account_circle"
+            android:tint="@color/colorBlack"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FFFFFF"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"
+            android:paddingLeft="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/profilePhoto" />
+        <ImageButton
+            android:id="@+id/buttonDelete"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_remove_24"
+            app:backgroundTint="@color/colorWhite"
+            android:tint="@color/colorRed"
+            android:background="@color/colorWhite"/>
+    </RelativeLayout>
+
+</LinearLayout>

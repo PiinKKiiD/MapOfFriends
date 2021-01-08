@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActivityNewGroup"
+    android:background="@color/colorWhite">
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:layout_marginLeft="@dimen/margin"
+            android:onClick="buttonChooseImageClicked"
+            android:id="@+id/chooseImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_insert_photo_24"
+            android:tint="@color/colorBlack"
+            android:backgroundTint="@color/colorWhite" />
+        <EditText
+            android:textSize="@dimen/textSizeMedium"
+            android:layout_marginBottom="@dimen/margin"
+            android:hint="@string/groupName"
+            android:id="@+id/editText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:layout_marginRight="@dimen/margin"
+            android:onClick="buttonAddClicked"
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_add_24"
+            android:tint="@color/colorBlack"
+            android:backgroundTint="@color/colorWhite" />
+    </LinearLayout>
+    <TextView
+        android:paddingLeft="@dimen/margin"
+        android:text="@string/newGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorBlack"
+        android:gravity="center_horizontal" />
+    <ListView
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginBottom="@dimen/margin"
+        android:id="@+id/listNewGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:paddingLeft="@dimen/margin"
+        android:text="@string/friends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorBlack"
+        android:gravity="center_horizontal" />
+    <ListView
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginBottom="@dimen/margin"
+        android:id="@+id/listFriends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

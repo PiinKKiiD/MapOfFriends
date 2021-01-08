@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:onClick="navigationClicked"
+        android:id="@+id/newFriend"
+        android:icon="@drawable/ic_baseline_person_add_24"
+        app:showAsAction="never"
+        android:title="@string/newFriend" />
+    <item
+        android:onClick="navigationClicked"
+        android:id="@+id/newGroup"
+        android:icon="@drawable/ic_baseline_group_add_24"
+        app:showAsAction="never"
+        android:title="@string/newGroup" />
+    <item
+        android:onClick="navigationClicked"
+        android:id="@+id/friends"
+        android:icon="@drawable/ic_baseline_people_24"
+        app:showAsAction="never"
+        android:title="@string/friends" />
+
+    <item
+        android:onClick="navigationClicked"
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_profile"
+        android:title="@string/profile" />
+<!--    <item-->
+<!--        android:onClick="navigationClicked"-->
+<!--        android:id="@+id/nav_settings"-->
+<!--        android:icon="@drawable/ic_baseline_settings_applications_24"-->
+<!--        android:title="@string/settings" />-->
+
+    <item
+        android:id="@+id/sign_out"
+        android:icon="@drawable/ic_leave_group"
+        android:title="@string/signOut"
+        android:onClick="navigationClicked"/>
+
+</menu>
